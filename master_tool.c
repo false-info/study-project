@@ -54,7 +54,7 @@ int main() {
 
         header();
         switch(cat) {
-            case 1:
+            case 1: //
                 printf("    %s___________\n__--information--__%s\n", RED, RESET);
 		        printf("%s[1]%s Nmap (Quick Scan)\n", RED, RESET);
 		        printf("%s[2]%s Nmap (Aggressive)\n", RED, RESET);
@@ -78,7 +78,7 @@ int main() {
             case 2: //web
                 printf("%s[1]%s Nikto\n", RED, RESET);
 		        printf("%s[2]%s Sqlmap\n", RED, RESET);
-		        printf("%S[3]%s Gobuster\n", RED, RESET);
+		        printf("%s[3]%s Gobuster\n", RED, RESET);
 		        printf("%s[4]%s Ffuf\n", RED, RESET);
 		        printf("%s[5]%s Burpsuite\n", RED, RESET);
 		        printf("%s[0]%s Back\n\n", RED, RESET);
@@ -93,10 +93,10 @@ int main() {
 
             case 3: // EXPLOIT
                 printf("%s[1]%s Metasploit (msfconsole)\n", RED, RESET);
-		printf("%s[2]%s Searchsploit\n", RED, RESET);
-		printf("%s[3]%s Commix\n", RED, RESET);
-		printf("%s[0]%s Back\n\n", RED, RESET);
-		printf("choose tool > ");
+				printf("%s[2]%s Searchsploit\n", RED, RESET);
+				printf("%s[3]%s Commix\n", RED, RESET);
+				printf("%s[0]%s Back\n\n", RED, RESET);
+				printf("choose tool > ");
                 scanf("%d", &tool);
                 if (tool == 1) system("msfconsole");
                 else if (tool == 2) {
@@ -108,12 +108,12 @@ int main() {
 
             case 4: // PASSWORDS
                 printf("%s[1]%s Hashcat\n", RED, RESET);
-		printf("%s[2]%s John The Ripper\n", RED, RESET);
-		printf("%s[3]%s Hydra\n", RED, RESET);
-		printf("%s[4]%s Medusa\n", RED, RESET);
-		printf("%s[5]%s Crunch\n", RED, RESET);
-		printf("%s[0]%s Back\n\n", RED, RESET);
-		printf("choose tool > ");
+				printf("%s[2]%s John The Ripper\n", RED, RESET);
+				printf("%s[3]%s Hydra\n", RED, RESET);
+				printf("%s[4]%s Medusa\n", RED, RESET);
+				printf("%s[5]%s Crunch\n", RED, RESET);
+				printf("%s[0]%s Back\n\n", RED, RESET);
+				printf("choose tool > ");
                 scanf("%d", &tool);
                 if (tool == 1) system("hashcat --help"); 
                 else if (tool == 3) {
@@ -125,21 +125,21 @@ int main() {
 
             case 5: // WIFI
                 printf("%s[1]%s Wifite\n", RED, RESET);
-		printf("%s[2]%s Aircrack-ng\n", RED, RESET);
-		printf("%s[3]%s Pixiewps\n", RED, RESET);
-		printf("%s[4]%s Bully\n", RED, RESET);
-		printf("%s[0]%s Back\n\n", RED, RESET);
-		printf("choose tool > ");
+				printf("%s[2]%s Aircrack-ng\n", RED, RESET);
+				printf("%s[3]%s Pixiewps\n", RED, RESET);
+				printf("%s[4]%s Bully\n", RED, RESET);
+				printf("%s[0]%s Back\n\n", RED, RESET);
+				printf("choose tool > ");
                 scanf("%d", &tool);
                 if (tool == 1) system("sudo wifite");
                 break;
 
             case 6: // SNIFFING
                 printf("%s[1]%s Bettercap\n", RED, RESET);
-		printf("%s[2]%s Wireshark\n", RED, RESET);
-		printf("%s[3]%s Tcpdump\n", RED, RESET);
-		printf("%s[0]%s Back\n\n", RED, RESET);
-		printf("choose tool > ");
+				printf("%s[2]%s Wireshark\n", RED, RESET);
+				printf("%s[3]%s Tcpdump\n", RED, RESET);
+				printf("%s[0]%s Back\n\n", RED, RESET);
+				printf("choose tool > ");
                 scanf("%d", &tool);
                 if (tool == 1) system("sudo bettercap");
                 else if (tool == 2) system("wireshark &");
@@ -147,10 +147,10 @@ int main() {
 
             case 7: // FORENSICS
                 printf("%s[1]%s Ghidra\n", RED, RESET);
-		printf("%s[2]%s Binwalk\n", RED, RESET);
-		printf("%s[3]%s Exiftool\n", RED, RESET);
-		printf("%s[0]%s Back\n\n", RED, RESET);
-		printf("choose tool > ");
+				printf("%s[2]%s Binwalk\n", RED, RESET);
+				printf("%s[3]%s Exiftool\n", RED, RESET);
+				printf("%s[0]%s Back\n\n", RED, RESET);
+				printf("choose tool > ");
                 scanf("%d", &tool);
                 if (tool == 1) system("ghidra");
                 else if (tool == 3) {
