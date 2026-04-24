@@ -54,7 +54,7 @@ int main() {
 
         header();
         switch(cat) {
-            case 1: //
+            case 1: //information gathering
                 printf("    %s___________\n__--information--__%s\n", RED, RESET);
 		        printf("%s[1]%s Nmap (Quick Scan)\n", RED, RESET);
 		        printf("%s[2]%s Nmap (Aggressive)\n", RED, RESET);
